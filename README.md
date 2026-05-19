@@ -61,15 +61,15 @@ When the first build drops, it'll be published on the [releases page](https://gi
 
 <!-- Drop ur screenshots in /assets/ and update the paths -->
 
-<img src="assets/screenshot-home.png" width="600" alt="Library" />
+<img src="assets/library.png" width="600" alt="Library" />
 
 *Library*
 
-<img src="assets/screenshot-versions.png" width="600" alt="Instance Creation" />
+<img src="assets/instance.png" width="600" alt="Instance Creation" />
 
 *Instance Creation*
 
-<img src="assets/screenshot-settings.png" width="600" alt="Modpack Discovery" />
+<img src="assets/modpacks.png" width="600" alt="Modpack Discovery" />
 
 *Modpack Discovery*
 
