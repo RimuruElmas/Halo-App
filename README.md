@@ -2,7 +2,7 @@
 
 # Halo
 
-**A clean, fast, modern Minecraft launcher.**
+**A clean, fast, modern, and slightly silly Minecraft launcher.**
 
 [![Status](https://img.shields.io/badge/release-coming%20soon-orange?style=for-the-badge)](https://github.com/RimuruElmas/Halo-App/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=for-the-badge)](#)
@@ -16,22 +16,29 @@
 
 ## 📖 About
 
-Halo is a lightweight Minecraft launcher built for players who want a smooth setup without the bloat. Quick installs, easy version switching, and a clean UI — that's it.
+Halo is a lightweight Minecraft launcher focused on removing the friction from modded gameplay. It’s fast, simple, and designed to make managing Minecraft instances easier.
 
-> Note: this repo is just the public frontpage for downloads and info. The source code lives in a private repository.
+It includes quality-of-life features for a smoother experience, with more updates planned.
+
+The UI is modern, responsive, and easy on the eyes — with dark mode by default.
 
 ---
 
 ## ✨ Features
 
-- ⚡ **Fast launches** — minimal startup time, low memory footprint
-- 🎮 **Version manager** — switch between Minecraft versions in one click
-- 🧩 **Mod support** — drop-in compatibility with popular mod loaders
-- 🎨 **Clean UI** — modern interface, dark mode by default
-- 🔄 **Auto-updates** — stay on the latest version without lifting a finger
-- 🪶 **Lightweight** — small install size, doesn't hog your RAM
-- ⚙️ **Customizable** — tweak RAM allocation, JVM args, and game directory
-- 🔐 **Secure auth** — official login flow, no credential storage shenanigans
+- Built-in mod browser with automatic dependency installation for all supported Minecraft versions.
+
+- Organize instances with folders, favorites, and one-click community modpack installation.
+
+- Global settings support — configure Minecraft settings once and automatically apply them to all newly created instances.
+
+- Global Mods, Shaders, and Resource Packs — keep your favorite content synchronized across instances without reinstalling them manually.
+
+- Privacy-focused design — Halo stores data locally on your device and minimizes external service dependency.
+
+- Custom instance artwork support, including animated GIFs.
+
+- Custom themes, personalization options, and hidden easter eggs.
 
 ---
 
@@ -54,17 +61,17 @@ When the first build drops, it'll be published on the [releases page](https://gi
 
 <!-- Drop ur screenshots in /assets/ and update the paths -->
 
-<img src="assets/screenshot-home.png" width="600" alt="Home screen" />
+<img src="assets/screenshot-home.png" width="600" alt="Library" />
 
-*Home screen*
+*Library*
 
-<img src="assets/screenshot-versions.png" width="600" alt="Version selector" />
+<img src="assets/screenshot-versions.png" width="600" alt="Instance Creation" />
 
-*Version selector*
+*Instance Creation*
 
-<img src="assets/screenshot-settings.png" width="600" alt="Settings" />
+<img src="assets/screenshot-settings.png" width="600" alt="Modpack Discovery" />
 
-*Settings panel*
+*Modpack Discovery*
 
 </div>
 
@@ -73,15 +80,14 @@ When the first build drops, it'll be published on the [releases page](https://gi
 ## 🚀 Getting Started
 
 1. **Download** the latest `.exe` from the [releases page](https://github.com/RimuruElmas/Halo-App/releases) *(once available)*
-2. **Run** the installer (or portable version, if available)
+2. **Run** the installer
 3. **Log in** with your account
-4. **Pick a version** and hit play 🎮
 
-That's it. No config files to edit, no extra dependencies.
+That's it.
 
 ---
 
-## ❓ FAQ
+## ❓ What You May Ask
 
 <details>
 <summary><b>Is this safe to use?</b></summary>
@@ -95,7 +101,8 @@ The launcher itself is closed-source for now. This page exists to provide a trus
 
 <details>
 <summary><b>Does it support mods?</b></summary>
-Yes — common mod loaders are supported. See the in-app mods section for details.
+Yes — Halo uses Fabric as its primary mod loader.  
+You can still import existing Forge, NeoForge, or any custom modded instances locally.
 </details>
 
 <details>
@@ -110,7 +117,11 @@ Open an issue in this repo, or ping us in the <a href="https://discord.gg/Q99DE8
 
 <details>
 <summary><b>My antivirus flagged the .exe — should I worry?</b></summary>
-Most likely a false positive (common for unsigned launchers). You can verify by checking the file hash listed on the <a href="https://github.com/RimuruElmas/Halo-App/releases">releases page</a> matches your download.
+This is usually a false positive, which is common for unsigned applications and custom launchers.
+
+To verify safety:
+- Compare the file hash with the one listed on the <a href="https://github.com/RimuruElmas/Halo-App/releases">releases page</a>
+- Optionally scan the file using VirusTotal before running it
 </details>
 
 ---
@@ -118,12 +129,12 @@ Most likely a false positive (common for unsigned launchers). You can verify by 
 ## 🗺️ Roadmap
 
 - [x] Initial release
-- [x] Auto-updater
+- [ ] Auto-updater
 - [ ] Cross-platform support (Mac / Linux)
-- [ ] Built-in mod browser
+- [x] Built-in mod browser
 - [ ] Profile sync across devices
-- [ ] Custom themes
-- [ ] Skin manager
+- [x] Custom themes
+- [?] Skin manager
 
 Suggestions welcome — open an issue or drop ideas in Discord.
 
