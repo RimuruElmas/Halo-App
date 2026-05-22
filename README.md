@@ -44,9 +44,9 @@ The UI is modern, responsive, and easy on the eyes — with dark mode by default
 
 ## 📥 Download
 
-> ⚠️ **No release available yet.** Halo is still in development — check back soon or join the [Discord](https://discord.gg/Q99DE8GtmW) for updates.
+> ⚠️ Halo is still in development — join the [Discord](https://discord.gg/Q99DE8GtmW) for updates.
 
-When the first build drops, it'll be published on the [releases page](https://github.com/RimuruElmas/Halo-App/releases).
+Current version of the launcher can be found in the [releases page](https://github.com/RimuruElmas/Halo-App/releases).
 
 **System requirements:**
 - Windows 10 or later (64-bit)
@@ -79,7 +79,7 @@ When the first build drops, it'll be published on the [releases page](https://gi
 
 ## 🚀 Getting Started
 
-1. **Download** the latest `.exe` from the [releases page](https://github.com/RimuruElmas/Halo-App/releases) *(once available)*
+1. **Download** the latest `.exe` from the [releases page](https://github.com/RimuruElmas/Halo-App/releases)
 2. **Run** the installer
 3. **Log in** with your account
 
@@ -129,12 +129,12 @@ To verify safety:
 ## 🗺️ Roadmap
 
 - [x] Initial release
-- [ ] Auto-updater
+- [x] Auto-updater
 - [ ] Cross-platform support (Mac / Linux)
 - [x] Built-in mod browser
 - [ ] Profile sync across devices
 - [x] Custom themes
-- [?] Skin manager
+- [x] Skin manager
 
 Suggestions welcome — open an issue or drop ideas in Discord.
 
