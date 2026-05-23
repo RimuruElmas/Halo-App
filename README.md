@@ -156,10 +156,6 @@ It's on the roadmap, no ETA yet.
 Open an issue in this repo, or ping us in the <a href="https://discord.gg/Q99DE8GtmW">Discord</a>.
 </details>
 
-<details>
-<summary><b>My antivirus flagged the .exe — should I worry?</b></summary>
-This is usually a false positive, which is common for unsigned applications and custom launchers.
-
 To verify safety:
 - Compare the file hash with the one listed on the <a href="https://github.com/RimuruElmas/Halo-App/releases">releases page</a>
 - Optionally scan the file using VirusTotal before running it
