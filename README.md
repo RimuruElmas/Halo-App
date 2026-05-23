@@ -87,11 +87,52 @@ That's it.
 
 ---
 
+## 🛡️ Is it safe?
+
+Short version: **yes**. Halo doesn't store passwords, uses official Microsoft / Mojang auth, and ships with code that's auditable on VirusTotal before you install.
+
+You may see **1–3 detections out of ~70 vendors** on VirusTotal when you scan the installer. This is normal for unsigned indie software — see the FAQ below for the full explanation. The detections come exclusively from machine-learning heuristics with generic names like `ML/PUA-Gen` or `Generic.MALICIOUS` — never from signature-based engines like Microsoft Defender, Kaspersky, ESET, Bitdefender, or CrowdStrike.
+
+If you want to verify before installing:
+- Cross-reference the file hash on the [releases page](https://github.com/RimuruElmas/Halo-App/releases) with what you downloaded
+- Upload the `.exe` to [VirusTotal](https://www.virustotal.com/) yourself and look at *which* engines flag it
+- Ask in the [Discord](https://discord.gg/Q99DE8GtmW) if anything looks off
+
+---
+
 ## ❓ What You May Ask
 
 <details>
-<summary><b>Is this safe to use?</b></summary>
-Yes. Halo uses standard Minecraft authentication and does not store passwords locally. If you're cautious, you can scan the executable with VirusTotal before installing — some launchers get false positives from heuristic AV scanners, which is normal for unsigned indie software.
+<summary><b>My antivirus flagged the .exe — should I worry?</b></summary>
+<br>
+
+**Almost certainly not.** Here's what's actually happening:
+
+Halo is an **unsigned** indie installer (a code-signing certificate costs $200–$700/year, which we haven't sprung for yet). Unsigned `.exe` files that do *normal launcher things* trip a small handful of heuristic ML-based antivirus engines on VirusTotal — typically 1–3 out of ~70. The other ~67 vendors, including every major signature-based one (Microsoft Defender, Kaspersky, ESET, Bitdefender, Symantec, Trend Micro, CrowdStrike, McAfee, F-Secure…), see it as clean.
+
+The detections you'll see look like:
+
+| Vendor | Detection name | What it means |
+|---|---|---|
+| DeepInstinct | `MALICIOUS` | Pure ML guess, no specific malware family |
+| Sophos | `Generic ML PUA (PUA)` | "Potentially unwanted" via generic ML |
+| (similar) | `ML/Heur-Suspect` | Heuristic, no signature |
+
+These engines are designed to flag *anything* unsigned that:
+- Is an NSIS installer (the standard Windows installer format — Halo uses it)
+- Isn't signed by a recognized publisher
+- Touches the Windows registry (Halo's "start with Windows" toggle does this)
+- Spawns Java processes (the entire point of a launcher)
+- Downloads and executes other binaries (auto-updater, asset downloads)
+
+That description fits basically every unsigned indie installer, which is why ML engines lean conservative on them.
+
+If you want to be extra cautious:
+- Compare the SHA256 hash on the [releases page](https://github.com/RimuruElmas/Halo-App/releases) with what you downloaded
+- Scan the file yourself on [VirusTotal](https://www.virustotal.com/) and look at *which* engines flag it (signature-based hits would be a real red flag; ML-only ones are routine for unsigned software)
+- Ask in [Discord](https://discord.gg/Q99DE8GtmW)
+
+We may sign future releases with an official code-signing certificate once the project is more mature, which would silence almost all of these false positives.
 </details>
 
 <details>
