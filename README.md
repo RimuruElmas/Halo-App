@@ -4,7 +4,7 @@
 
 **A clean, fast, modern, and slightly silly Minecraft launcher.**
 
-[![Status](https://img.shields.io/badge/release-v0.1.4(Pre-Release)-green?style=for-the-badge)](https://github.com/RimuruElmas/Halo-App/releases)
+[![Status](https://img.shields.io/badge/release-v0.1.4-green?style=for-the-badge)](https://github.com/RimuruElmas/Halo-App/releases)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=for-the-badge)](#)
 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Q99DE8GtmW)
 
