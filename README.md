@@ -4,7 +4,7 @@
 
 **A clean, fast, modern, and slightly silly Minecraft launcher.**
 
-[![Status](https://img.shields.io/badge/release-v0.2.0-green?style=for-the-badge)](https://github.com/RimuruElmas/Halo-App/releases)
+[![Status](https://img.shields.io/badge/release-pre--release-yellow?style=for-the-badge)](https://github.com/RimuruElmas/Halo-App/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Windows-lightgrey?style=for-the-badge)](#)
 [![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/Q99DE8GtmW)
 
@@ -16,7 +16,7 @@
 
 ## 📖 About
 
-Halo is a lightweight Minecraft launcher focused on removing the friction from modded gameplay. It’s fast, simple, and designed to make managing Minecraft instances easier.
+Halo is a lightweight Minecraft launcher focused on removing the friction from modded gameplay. It's fast, simple, and designed to make managing Minecraft instances easier.
 
 It includes quality-of-life features for a smoother experience, with more updates planned.
 
@@ -91,7 +91,7 @@ That's it.
 
 Short version: **yes**. Halo doesn't store passwords, uses official Microsoft / Mojang auth, and ships with code that's auditable on VirusTotal before you install.
 
-You may see **1–3 detections out of ~70 vendors** on VirusTotal when you scan the installer. This is normal for unsigned indie software — see the FAQ below for the full explanation. The detections come exclusively from machine-learning heuristics with generic names like `ML/PUA-Gen` or `Generic.MALICIOUS` — never from signature-based engines like Microsoft Defender, Kaspersky, ESET, Bitdefender, or CrowdStrike.
+You may see **1–3 detections out of ~70 vendors** on VirusTotal when you scan the installer. This is normal for unsigned indie software — see the FAQ below for the full explanation. The detections[...]
 
 If you want to verify before installing:
 - Cross-reference the file hash on the [releases page](https://github.com/RimuruElmas/Halo-App/releases) with what you downloaded
@@ -108,7 +108,7 @@ If you want to verify before installing:
 
 **Almost certainly not.** Here's what's actually happening:
 
-Halo is an **unsigned** indie installer (a code-signing certificate costs $200–$700/year, which we haven't sprung for yet). Unsigned `.exe` files that do *normal launcher things* trip a small handful of heuristic ML-based antivirus engines on VirusTotal — typically 1–3 out of ~70. The other ~67 vendors, including every major signature-based one (Microsoft Defender, Kaspersky, ESET, Bitdefender, Symantec, Trend Micro, CrowdStrike, McAfee, F-Secure…), see it as clean.
+Halo is an **unsigned** indie installer (a code-signing certificate costs $200–$700/year, which we haven't sprung for yet). Unsigned `.exe` files that do *normal launcher things* trip a small handfu[...]
 
 The detections you'll see look like:
 
@@ -129,7 +129,7 @@ That description fits basically every unsigned indie installer, which is why ML 
 
 If you want to be extra cautious:
 - Compare the SHA256 hash on the [releases page](https://github.com/RimuruElmas/Halo-App/releases) with what you downloaded
-- Scan the file yourself on [VirusTotal](https://www.virustotal.com/) and look at *which* engines flag it (signature-based hits would be a real red flag; ML-only ones are routine for unsigned software)
+- Scan the file yourself on [VirusTotal](https://www.virustotal.com/) and look at *which* engines flag it (signature-based hits would be a real red flag; ML-only ones are routine for unsigned software[...]
 - Ask in [Discord](https://discord.gg/Q99DE8GtmW)
 
 We may sign future releases with an official code-signing certificate once the project is more mature, which would silence almost all of these false positives.
